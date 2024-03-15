@@ -1,0 +1,73 @@
+.container-expanded {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #303030; /* Adjust to match your preferred background */
+    max-width: 1200px; /* Or your preferred max width */
+    margin: 0 auto; /* Centers the container */
+    color: white ;
+    min-height: 100vh ;
+  }
+  
+  .movie-details {
+    display: flex;
+    width: 100%;
+  }
+  
+  .movie-poster img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-right: 20px; /* Adds space between the poster and the movie info */
+    max-width: 300px; /* Adjust based on your preference */
+    transition: .3s ease-out ;
+  }
+  .movie-poster img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 20px rgb(41, 41, 41);
+  }
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movie-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .movie-release-date,
+  .movie-overview,
+  .movie-casts {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  
+  .favorites-icon {
+    position: absolute; /* Adjust position as necessary */
+    top: 20px; /* Distance from top */
+    right: 20px; /* Distance from right */
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .favorites-icon.favorited {
+    color: red; /* Color when marked as favorite */
+  }
+  
+  @media (max-width: 768px) {
+    .container-expanded {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .movie-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .movie-poster img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  

@@ -1,0 +1,116 @@
+.home {
+    background-color: #303030;
+    color: white ;
+}
+
+
+.body.h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.row-movies {
+    display: flex ; 
+    position: relative;
+}
+
+.categories {
+    position: sticky;
+    top: 0 ;
+    left: 0 ; 
+    height: 100vh ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-width: 200px ;
+}
+
+.title {
+    text-align: center;
+}
+#films {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #424242; /* Adjust the background color as needed */
+}
+
+.film-poster {
+  background: #303030;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition:  0.3s ease-in-out;
+  position: relative;
+  min-width: 20%;
+  cursor: pointer;
+}
+
+.film-poster:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 20px rgb(41, 41, 41);
+}
+
+.film-poster h2,
+.film-poster h3 {
+  margin: 10px;
+}
+
+.film-poster img.img-poster {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ddd; /* A subtle line between the image and text */
+  height: 280px ;
+  object-fit: cover;
+}
+.film-poster > div {
+  position: absolute ;
+  bottom: 0 ;
+  left: 0 ;
+  right: 0 ;
+  top: 0px ;
+  overflow: hidden ;
+  opacity: 0;
+}
+  
+.film-poster:hover > div {
+  opacity: 1;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,.6) 100%);
+  transition: .6s ease-in-out ;
+}
+
+.film-poster h2 {
+  font-size: 1.2em; /* Title size */
+  color: white; /* Title color */
+  opacity: 0;
+  font-weight: 400;
+}
+
+.film-poster h3 {
+  font-size: 1em; /* Overview size */
+  color: whitesmoke; /* Overview text color */
+  overflow: hidden; /* Hide overflowed text */
+  text-overflow: ellipsis; /* Add ellipsis to overflowed text */
+  opacity: 0;
+  font-weight: 200;
+}
+.film-poster:hover > div h2 {
+  opacity: 1;
+}
+.film-poster:hover > div h3 {
+  opacity: 1;
+}
+.film-poster:hover > div h2{
+  transition-delay: .5s ;
+  transition-duration: .3s ;
+} 
+.film-poster:hover > div h3 {
+  transition-delay: .7s ;
+  transition-duration: .3s ;
+} 
+  

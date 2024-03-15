@@ -1,0 +1,32 @@
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Match the footer background to your design */
+  }
+  
+  .page-selector {
+    display: inline-block; /* Center the page selector in the footer */
+  }
+  
+  .page-selector .nav {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #d9d9d9; /* Button background color */
+    color: #333; /* Button text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners for buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+  }
+  
+  .page-selector .nav:hover {
+    background-color: #b0b0b0; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .page-selector .nav:active {
+    transform: translateY(1px); /* Push down effect when clicked */
+  }
+  

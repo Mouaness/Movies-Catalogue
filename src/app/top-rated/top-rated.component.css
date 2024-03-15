@@ -1,0 +1,44 @@
+#films {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #424242; /* Adjust the background color as needed */
+}
+
+.film-poster {
+  background: #303030;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition:  0.3s ease-in-out;
+}
+
+.film-poster:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 20px rgb(41, 41, 41);
+}
+
+.film-poster h2,
+.film-poster h3 {
+  margin: 10px;
+}
+
+.film-poster img.img-poster {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ddd; /* A subtle line between the image and text */
+}
+
+.film-poster h2 {
+  font-size: 1.2em; /* Title size */
+  color: white; /* Title color */
+}
+
+.film-poster h3 {
+  font-size: 1em; /* Overview size */
+  color: whitesmoke; /* Overview text color */
+  height: 60px; /* Fixed height for uniformity */
+  overflow: hidden; /* Hide overflowed text */
+  text-overflow: ellipsis; /* Add ellipsis to overflowed text */
+}

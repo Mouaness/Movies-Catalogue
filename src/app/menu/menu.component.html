@@ -1,0 +1,16 @@
+<nav class="menu">
+    <ul class="menu-list">
+      <li class="menu-item"><a href="/now-playing" class="menu-link">Now Playing</a></li>
+      <li class="menu-item"><a href="/popular" class="menu-link">Popular</a></li>
+      <li class="menu-item"><a href="/top-rated" class="menu-link">Top Rated</a></li>
+      <li class="menu-item"><a href="/upcoming" class="menu-link">Upcoming</a></li>
+      <li class="menu-item"><a href="/favorite-movies" class="menu-link">Favorites</a></li>
+    </ul>
+    <div class="navbar-search">
+      <form (ngSubmit)="Search($event)">
+        <input type="text" id="textInput" name="textInput" [(ngModel)]="searchText">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </nav>
+  

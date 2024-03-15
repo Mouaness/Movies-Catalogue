@@ -1,0 +1,56 @@
+.menu {
+    background-color: #303030; /* Match the landing page background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 0.5em 1em; /* Spacing around menu items */
+    border-radius: 8px; /* Rounded corners for the menu */
+    color: white ;
+  }
+  
+  .menu-list {
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align menu items in a row */
+    justify-content: space-around; /* Evenly space out the items */
+  }
+  
+  .menu-item {
+    padding: 0.5em 1em; /* Spacing for each menu item */
+  }
+  
+  .menu-link {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Menu item text color */
+    font-weight: bold; /* Bold font for menu items */
+  }
+  
+  .menu-link:hover,
+  .menu-link:focus {
+    color: rgb(217, 215, 215); /* Highlight color for hover and focus */
+  }
+  
+  .menu-search {
+    margin-top: 1em; /* Space between the menu and search bar */
+  }
+  
+  .menu-search input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ddd; /* Border color for input */
+    border-radius: 4px; /* Rounded corners for input */
+  }
+  
+  .menu-search button {
+    padding: 0.5em 1em;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .menu-search button:hover,
+  .menu-search button:focus {
+    background-color: #0056b3; /* Darker background color on hover/focus */
+  }
+  
+  
